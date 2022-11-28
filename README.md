@@ -8,6 +8,9 @@ This project won't be deployed to AWS. Functions will be run locally using the S
 
 ## post
 
+Creates a new TO-DO item for the given user.
+
 ## get
 
-# 
+Retrieves all TO-DO items for the given user.
+
