@@ -34,7 +34,20 @@ const serverlessConfiguration: AWS = {
           },
         },
       ],
-    } 
+    },
+    get: {
+      handler: 'src/functions/get.handler',
+      timeout: 30,
+      events: [
+        {
+          http: {
+            method: 'get',
+            path: 'todos/{userId}',
+            cors: true,
+          },
+        },
+      ],
+    },
   },
   package: { individually: true },
   custom: {
