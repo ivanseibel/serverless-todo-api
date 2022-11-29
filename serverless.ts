@@ -65,13 +65,13 @@ const serverlessConfiguration: AWS = {
           TableName: 'todos',
           AttributeDefinitions: [
             {
-              AttributeName: 'id',
+              AttributeName: 'userId',
               AttributeType: 'S',
             },
           ],
           KeySchema: [
             {
-              AttributeName: 'id',
+              AttributeName: 'userId',
               KeyType: 'HASH',
             },
           ],
